@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+     <!DOCTYPE html>
     <html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8">
@@ -10,6 +10,133 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
+
+    <style>
+        /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+    text-decoration: none;
+    transition: .4s;
+}
+body{
+    height: 200vh;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg-hero.jpg);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
+    background:linear-gradient(to right, #C9CDCF,#AAACAF);
+}
+.hero .content{
+    position: relative;
+    overflow: hidden;
+}
+.hero .content .top-sec {
+    width: 65%;
+    padding: 20px 20px 10px;
+}
+.hero .content .arrow-img{
+    width: 400px;
+}
+.hero .content .top-sec h2{
+    color: #DA0000;
+    font-size: 27px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 20px;
+}
+.hero .content .top-sec h2::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 93%;
+    height: 3px;
+    background-color: #111;
+    border-radius: 30%;
+
+}
+.hero .content .top-sec h4{
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.hero .img-and-product{
+    position: absolute;
+    left: -180px;
+    width: 350px;
+    height: 400px;
+    background: url(img/bg-red.jpg);
+    background-size: cover;
+    border-radius: 0% 0% 100% 00%;
+}
+.hero .img-and-product .product{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 230px;
+    z-index: 10;
+}
+
+
+
+
+/* start ul bottom hero sec */
+.hero .content .bottom-sec{
+    text-align: center;
+    padding: 20px 20px 20px 30px;
+}
+.hero .content .bottom-sec ul{
+    text-align: right;
+}
+
+.hero .content .bottom-sec ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.hero .content .bottom-sec ul li:last-child{
+    margin-bottom: 25px;
+}
+.hero .content .bottom-sec ul li span{
+    width: 14px;
+    height: 40px;
+    background-color: #e60f0f;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.hero .content .bottom-sec .btn{
+    padding: 15px 70px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    background: url(img/btn-red-bg.png);
+    background-size: cover;
+    background-position: bottom;
+}
+    </style>
     <body>
         <div class="hero">
 
