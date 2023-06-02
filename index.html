@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+        <!DOCTYPE html>
     <html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8">
@@ -11,8 +11,8 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
          <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
 
-         <style>
-                
+        <style>
+               
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
@@ -26,7 +26,9 @@
 body{
     height: 100vh;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 *{
 padding: 0;
 margin: 0;
@@ -186,6 +188,10 @@ border-bottom-right-radius: 50% 3%;
     width: 80px;
     height: 140px;
 }
+.two-sec .content .box img.img-sm{
+    width: 65px;
+    height: 125px;
+}
 .two-sec .content .box .text h2{
     color: #fff;
     margin-bottom: 10px;
@@ -256,7 +262,7 @@ top: -70px;
 }
 .section-3 .contanier .bottom-sec .all-line .line .row li{
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
    
 }
 
@@ -394,18 +400,11 @@ top: -70px;
     width: 100%;
 }
 @media(min-width:390px){
-    .bottom-sec .line{
-        font-size: 17.5px;
-        line-height: 1.7;
-
-        }
         .last-sec .contentt .first-sec{
             width: 280px;
             padding-bottom: 15px;
             padding-left: 45px;
         }
-        
-        
         .last-sec .contentt .first-sec img{
             width: 220px;
             top: -55px;
@@ -413,14 +412,109 @@ top: -70px;
         }
         .section-4 .botm-sec .text p{
             color: #fff;
-            font-size: 17px;
+            font-size: 16.8px;
             line-height: 2.4;
         }
+        .bottom-sec .line{
+            font-size: 17.4px;
+            line-height: 1.6;
+            }
+            .hero .content .top-sec h2{
+                font-size: 23.9px;
+            }
+            .hero .content .top-sec h4{
+                font-size: 23.7px;
+            }
         
 
 }
 
-         </style>
+@media(max-width:380px){
+    .bottom-sec .line{
+        font-size: 16.7px;
+
+        }
+        .hero .content .top-sec h2{
+            font-size: 23.5px;
+        }
+        .hero .content .top-sec h4{
+            font-size: 23.3px;
+        }
+        .section-4 .botm-sec .text p{
+            font-size: 16.1px;
+        }
+        .last-sec .contentt .botm-sec p{
+            font-size: 8.5px;
+        }
+        .last-sec .contentt .botm-sec .my-form h2{
+            font-size: 15.9px;
+        }
+}
+@media(max-width:370px){
+    .bottom-sec .line{
+        font-size: 16.4px;
+
+        }
+        .hero .content .top-sec h2{
+            font-size: 23px;
+        }
+        .hero .content .top-sec h4{
+            font-size: 23px;
+        }
+        .section-4 .botm-sec .text p{
+            font-size: 15.7px;
+        }
+        .last-sec .contentt .botm-sec p{
+            font-size: 8.3px;
+        }
+        .last-sec .contentt .botm-sec .my-form h2{
+            font-size: 15.7px;
+        }
+}
+
+@media(max-width:360px){
+    .bottom-sec .line{
+        font-size: 16.4px;
+
+    }
+    .hero .content .top-sec h2{
+        font-size: 22.7px;
+    }
+    .hero .content .top-sec h4{
+        font-size: 22.7px;
+    }
+    .section-4 .botm-sec .text p{
+        font-size: 15.4px;
+    }
+    .last-sec .contentt .botm-sec p{
+        font-size: 8px;
+    }
+    .last-sec .contentt .botm-sec .my-form h2{
+        font-size: 15.4px;
+    }
+
+}
+@media(max-width:350px){
+    .bottom-sec .line{
+        font-size: 16px;
+
+    }
+    .hero .content .top-sec h2{
+        font-size: 22.5px;
+    }
+    .hero .content .top-sec h4{
+        font-size: 22.5px;
+    }
+    .section-4 .botm-sec .text p{
+        font-size: 15.2px;
+    }
+    .last-sec .contentt .botm-sec p{
+        font-size: 8px;
+    }
+}
+   
+
+        </style>
 
        
     </head>
@@ -496,7 +590,7 @@ top: -70px;
                         </div>
                     </div>
 
-                    <a href="#" class="btn"> اطلب الان</a>
+                    <a href="#form" class="btn"> اطلب الان</a>
                 </div>
             </div>
         </div>
@@ -519,7 +613,7 @@ top: -70px;
                     </div>
                     </div>
 
-                    <img src="img/4.png" alt="">
+                    <img class="img-sm" src="img/4.png" alt="">
                 </div>
 
                 <div class="box">
@@ -599,7 +693,7 @@ top: -70px;
                 </div>
             </div>
 
-            <a href="#" class="btn"> اطلب الان</a>
+            <a href="#form" class="btn"> اطلب الان</a>
         </div>
 
         <div class="section-4 two-sec">
@@ -636,12 +730,14 @@ top: -70px;
                     <h4>الـــدفـــع عنـــــد اسـتــــلام الـمنتـــج</h4>
                     <p>سياسه الاسـترجاع في حاله عدم رضائك عن النتائج ضمان استرجاع خلال 14 يوم</p>
 
-                    <div class="my-form">
+                    <div id="form" class="my-form">
                         <h2>سجـل بياناتك الآن وسـوف نقوم بالتواصل</h2>
                         <h2>معكـم بكل التفـاصيـل قبـل شحـن المنتج</h2>
                         <form action="">
                             <input type="text" placeholder="الاســم">
+                            <div id="email-error">يرجي ادخال الأسم</div>
                             <input type="number" placeholder="رقم الهاتف">
+                            <div id="pass-error">ادخل رقم الهاتف الصحيح</div>
                             <button class="btn">اطلب الان</button>
                         </form>
                     </div>
