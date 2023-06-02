@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+      <!DOCTYPE html>
     <html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8">
@@ -8,94 +8,99 @@
 
         <!-- Link File CSS -->
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </head>
-
-   <style>
-    /* Google Fonts */
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  
+        <style>
+            
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
 
 
 
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Vazirmatn', sans-serif;
-    text-decoration: none;
-    transition: .4s;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Vazirmatn', sans-serif;
+text-decoration: none;
+transition: .4s;
 }
 body{
-    height: 200vh;
+height: 200vh;
 }
 .hero{
-    width: 100%;
-    padding-bottom: 30px;
-    background: url(img/bg-hero.jpg);
-    background-size: cover;
-    background-position: right;
-    position: relative;
+width: 100%;
+padding-bottom: 30px;
+background: url(img/bg-hero.jpg);
+background-size: cover;
+background-position: right;
+position: relative;
+border-bottom-left-radius: 30% 7%;
+border-bottom-right-radius: 30% 7%;
+z-index: 100;
 }
-.hero::after{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
-    background:linear-gradient(to right, #C9CDCF,#AAACAF);
-}
+/* .hero::after{
+content: '';
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 40px;
+border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
+background:linear-gradient(to right, #C9CDCF,#AAACAF);
+} */
+
 .hero .content{
-    position: relative;
-    overflow: hidden;
+position: relative;
+overflow: hidden;
 }
 .hero .content .top-sec {
-    width: 64%;
-    padding: 20px 20px 10px;
+width: 64%;
+padding: 20px 20px 10px;
 }
 .hero .content .arrow-img{
-    width: 350px;
+width: 350px;
 }
 .hero .content .top-sec h2{
-    color: #DA0000;
-    font-size: 24px;
-    font-weight: 900;
-    position: relative;
-    margin-bottom: 20px;
+color: #DA0000;
+font-size: 24px;
+font-weight: 900;
+position: relative;
+margin-bottom: 20px;
 }
 .hero .content .top-sec h2::before{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    right: 0;
-    width: 93%;
-    height: 3px;
-    background-color: #111;
-    border-radius: 30%;
+content: '';
+position: absolute;
+bottom: -10px;
+right: 0;
+width: 93%;
+height: 3px;
+background-color: #111;
+border-radius: 30%;
 
 }
 .hero .content .top-sec h4{
-    font-size: 24px;
-    font-weight: 700;
+font-size: 24px;
+font-weight: 700;
 }
 
 .hero .img-and-product{
-    position: absolute;
-    left: -180px;
-    width: 330px;
-    height:370px;
-    background: url(img/bg-red.jpg);
-    background-size: cover;
-    border-radius: 0% 0% 100% 00%;
+position: absolute;
+left: -180px;
+width: 330px;
+height:370px;
+background: url(img/bg-red.jpg);
+background-size: cover;
+border-radius: 0% 0% 100% 00%;
 }
 .hero .img-and-product .product{
-    position: absolute;
-    top: 0;
-    right: 20px;
-    width: 200px;
-    z-index: 10;
+position: absolute;
+top: 0;
+right: 20px;
+width: 200px;
+z-index: 10;
 }
 
 
@@ -103,59 +108,91 @@ body{
 
 /* start ul bottom hero sec */
 .hero .content .bottom-sec{
-    text-align: center;
-    padding: 10px 20px 20px 30px;
+text-align: center;
+padding: 10px 20px 20px 30px;
 }
 .hero .content .bottom-sec ul{
-    text-align: right;
+text-align: right;
 }
 
 .hero .content .bottom-sec ul li{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    font-size: 17px;
-    font-weight: 700;
+list-style: none;
+display: flex;
+align-items: center;
+margin-bottom: 12px;
+font-size: 17px;
+font-weight: 700;
 }
 .hero .content .bottom-sec ul li:last-child{
-    margin-bottom: 25px;
+margin-bottom: 25px;
 }
 .hero .content .bottom-sec ul li span{
-    min-width: 8px;
-    height: 40px;
-    background-color: #e60f0f;
-    margin-left: 10px;
-    border-radius: 10px;
+min-width: 8px;
+height: 40px;
+background-color: #e60f0f;
+margin-left: 10px;
+border-radius: 10px;
 }
 .hero .content .bottom-sec .btn{
-    padding: 15px 70px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bolder;
-    background: url(img/btn-red-bg.png);
-    background-size: cover;
-    background-position: bottom;
+padding: 15px 70px;
+border-radius: 10px;
+color: #fff;
+font-size: 30px;
+font-weight: bolder;
+background: url(img/btn-red-bg.png);
+background-size: cover;
+background-position: bottom;
 }
 
 
 /* start two-sec */
 
 .two-sec{
-    width: 100%;height: 500px;
-    background: url(img/bg-red.jpg);
-    background-size: cover;
-    background-position: center;
+position: relative;
+top: -50px;
+width: 100%;
+background: url(img/bg-red.jpg);
+background-size: cover;
+background-position: center;
+padding: 50px 20px 20px;
+z-index: 10;
 }
 
+.two-sec .head-sec{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.two-sec .head-sec h3{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+}
+.two-sec .head-sec p{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+}
+.two-sec .content .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.two-sec .content .box img{
+    width: 75px;
+}
+.two-sec .content .box .text h2{
+    color: #fff;
+}
+.two-sec .content .box .text p{
+    color: #fff;
+    font-size: 15px;
+    padding-left: 20px;
+}
+        </style>
+    </head>
 
 
-
-
-
-
-   </style>
     
     <body>
         <div class="hero">
@@ -181,33 +218,33 @@ body{
 
                         <li>
                             <span></span>
-                            يعطيــــــك انــتصـــــــاب قـــــوي وصلــــــب ويقضــــــي نهــائيـــــــــا علـــي الـضـعـــــــف
+                            يعطيــــك انــتصـــــاب قـــــوي وصلــــــب ويقضـــــي نهــائيـــــــا علـــي الـضـعـــــف
                             
                         </li>
 
                         <li>
                             <span></span>
-                            يعمـــل علي اطـــالــة العضــو الذكــري طولا  وعرضـا حتـ يتصـل الـي درجـة الفحــــولــة
+                            يعمــل علي اطـــالــة العضــو الذكــري طولا  وعرضـا حتـي تصـل الـي درجـة الفحـــولــة
                             
                         </li>
 
                         <li>
                             <span></span>
-                            يقضي تمــامـــــــا علـــي ســرعـــة الـقــــذف لعـــــلاقة اطـــول وامتــع بيـــن الطــــرفين
+                            يقضي تمــامــــا علــي ســرعـــة الـقــــذف لعــــلاقة اطـــول وامتــع بيــن الطـــرفين
                             
                         </li>
 
                         <li>
                             <span></span>
-                            يـــزيــدالرغبــةالجنسيــــةويـــرفــع مــــن
-                            الاداء والـقـــــوة للـــرجــــال لــتســـتعـيـــد
-                            قـــوتـــــك وثـقـتـــك فـــــي الـعـــلاقــــــــة
+                            يـــزيــد الرغبــة الجنسيــــة  ويـــرفــع  مــــن
+                            الاداء والـقـــوة للـــرجــال لــتســـتعـيـــد
+                            قـــوتــــك وثـقـتـــك فـــي الـعــلاقــــــة
                             
                         </li>
 
                         <li>
                             <span></span>
-                            امــــن وصـحـــي لأنـــــه مــــن اعـشـــــــاب وفيتــامينــــات طــــبيعيــــــة
+                            امـــن وصـحـــي لأنــــه مــــن اعـشـــــاب وفيتــامينــــات طـــبيعيــــة
                             
                             
                         </li>
@@ -219,7 +256,31 @@ body{
         </div>
 
         <div class="two-sec">
+            <div class="content">
+                <div class="head-sec">
+                    <h3>نتائج  سترايك جيل</h3>
+                    <p>في اول اسـبوعين</p>
+                    <p>من الأستخدام</p>
+                </div>
 
+                <div class="box">
+                    <div class="text">
+                        <h2>الاسبوع الأول</h2>
+                        <p>تــــأخيـــر القــــذف : من 15 الي  20دقيقة زيادة الطول : من  3.5سـم الي  4.5سـم زيــــادة الانتصـــــاب بنسبــــــة 40٪ الي 6</p>
+                    </div>
+
+                    <img src="img/4.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <h2> الاسبوع الثاني</h2>
+                        <p>تأخيــر القـــذف : من  25الي  40دقيقــة زيــادة الطـــول : مــن 5 سم الي 7 سم زيـــادة الانتصـــــاب بنسبـة 70٪ الي 1</p>
+                    </div>
+
+                    <img src="img/4.png" alt="">
+                </div>
+            </div>
         </div>
       
     </body>
