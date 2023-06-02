@@ -1,4 +1,4 @@
-      <!DOCTYPE html>
+        <!DOCTYPE html>
     <html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8">
@@ -10,11 +10,10 @@
         <link rel="stylesheet" href="style.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  
         <style>
             
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
 
 
@@ -26,6 +25,7 @@ box-sizing: border-box;
 font-family: 'Vazirmatn', sans-serif;
 text-decoration: none;
 transition: .4s;
+list-style: none;
 }
 body{
 height: 200vh;
@@ -41,16 +41,6 @@ border-bottom-left-radius: 30% 7%;
 border-bottom-right-radius: 30% 7%;
 z-index: 100;
 }
-/* .hero::after{
-content: '';
-position: absolute;
-top: 100%;
-left: 0;
-width: 100%;
-height: 40px;
-border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
-background:linear-gradient(to right, #C9CDCF,#AAACAF);
-} */
 
 .hero .content{
 position: relative;
@@ -58,19 +48,21 @@ overflow: hidden;
 }
 .hero .content .top-sec {
 width: 64%;
-padding: 20px 20px 10px;
+padding: 10px 20px 10px;
 }
 .hero .content .arrow-img{
 width: 350px;
 }
 .hero .content .top-sec h2{
 color: #DA0000;
-font-size: 24px;
+font-size: 27px;
 font-weight: 900;
 position: relative;
-margin-bottom: 20px;
 }
-.hero .content .top-sec h2::before{
+.hero .content .top-sec h2.border-btm{
+    margin-bottom: 20px;
+}
+.hero .content .top-sec .border-btm::before{
 content: '';
 position: absolute;
 bottom: -10px;
@@ -82,24 +74,24 @@ border-radius: 30%;
 
 }
 .hero .content .top-sec h4{
-font-size: 24px;
+font-size: 28px;
 font-weight: 700;
 }
 
 .hero .img-and-product{
 position: absolute;
 left: -180px;
-width: 330px;
-height:370px;
+width: 320px;
+height:350px;
 background: url(img/bg-red.jpg);
 background-size: cover;
 border-radius: 0% 0% 100% 00%;
 }
 .hero .img-and-product .product{
 position: absolute;
-top: 0;
+top: -10px;
 right: 20px;
-width: 200px;
+width: 190px;
 z-index: 10;
 }
 
@@ -111,22 +103,23 @@ z-index: 10;
 text-align: center;
 padding: 10px 20px 20px 30px;
 }
-.hero .content .bottom-sec ul{
+.hero .content .bottom-sec .line{
 text-align: right;
 }
 
-.hero .content .bottom-sec ul li{
+.hero .content .bottom-sec .line{
 list-style: none;
 display: flex;
 align-items: center;
 margin-bottom: 12px;
 font-size: 17px;
-font-weight: 700;
+font-weight: 1000;
 }
-.hero .content .bottom-sec ul li:last-child{
+
+.hero .content .bottom-sec .line:last-child{
 margin-bottom: 25px;
 }
-.hero .content .bottom-sec ul li span{
+.hero .content .bottom-sec .line span{
 min-width: 8px;
 height: 40px;
 background-color: #e60f0f;
@@ -190,6 +183,7 @@ z-index: 10;
     padding-left: 20px;
 }
         </style>
+  
     </head>
 
 
@@ -206,49 +200,62 @@ z-index: 10;
                 </div>
 
                 <div class="top-sec">
-                    <h2>الحل السحــر ي
-                        للضعف عند الرجال</h2>
-                    <h4>المنتــج الأكثــر <br> مبيـعا في العالــم</h4>
+                    <h2>الحل السحــري</h2>
+                    <h2 class="border-btm">للضعف عند الرجال</h2>
+                    <h4>المنتــج الأكثــر <br> مبيـعـا في الـعالـــم</h4>
                 </div>
 
                 <img class="arrow-img" src="img/arrow.png" alt="">
 
                 <div class="bottom-sec">
-                    <ul>
+                    <div class="all-line">
 
-                        <li>
+                        <div class="line">
                             <span></span>
-                            يعطيــــك انــتصـــــاب قـــــوي وصلــــــب ويقضـــــي نهــائيـــــــا علـــي الـضـعـــــف
+                            <div class="row">
+                                <li>يعطيــــــك انــتصــــــــاب قــــــوي وصلـــــــب</li>
+                                <li>ويقضــــــي نهــائيــــــــا علـــي الـضـعــــــــف</li>
+                            </div>
                             
-                        </li>
+                        </div>
 
-                        <li>
+                        <div class="line">
                             <span></span>
-                            يعمــل علي اطـــالــة العضــو الذكــري طولا  وعرضـا حتـي تصـل الـي درجـة الفحـــولــة
+                            <div class="row"p>
+                                <li>يعمـــل علي اطـــالــة العضــو الذكــري طولا</li>
+                                <li>وعرضـا حتـي تصـل الـي درجـة الفحــــولــة</li>
+                            </div>
                             
-                        </li>
+                        </div>
 
-                        <li>
+                        <div class="line">
                             <span></span>
-                            يقضي تمــامــــا علــي ســرعـــة الـقــــذف لعــــلاقة اطـــول وامتــع بيــن الطـــرفين
-                            
-                        </li>
+                            <div class="row">
+                                <li>يقضي تمــامــــــا علـــي  ســرعـــة الـقــــذف</li>
+                                <li>لعـــــلاقـة اطـــول وامتـــع بيـــن الطــــرفين</li>
+                            </div>
+                        </div>
 
-                        <li>
+                        <div class="line">
                             <span></span>
-                            يـــزيــد الرغبــة الجنسيــــة  ويـــرفــع  مــــن
-                            الاداء والـقـــوة للـــرجــال لــتســـتعـيـــد
-                            قـــوتــــك وثـقـتـــك فـــي الـعــلاقــــــة
+                            <div class="row">
+                                <li>يـــزيــد الرغبــة الجنسيــــة ويـــرفــع مـــن</li>
+                                <li>الاداء والـقــــــوة للـــرجــــال لــتســـتعـيـــد</li>
+                                <li>قـــوتـــــك وثـقـتــــك فـــــي الـعـــلاقـــــــــة</li>
+                            </div>
                             
-                        </li>
+                        </div>
 
-                        <li>
+                        <div class="line">
                             <span></span>
-                            امـــن وصـحـــي لأنــــه مــــن اعـشـــــاب وفيتــامينــــات طـــبيعيــــة
+                            <div class="row">
+                                <li>امــــن وصـحـــي لأنـــــه مــــن اعـشــــــــاب</li>
+                                <li>وفيتــامينـــــات طــــبيعيــــــة</li>
+                            </div>
                             
                             
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
 
                     <a href="#" class="btn"> اطلب الان</a>
                 </div>
