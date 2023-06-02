@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+    <!DOCTYPE html>
     <html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8">
@@ -10,8 +10,11 @@
         <link rel="stylesheet" href="style.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-        <style>
-    
+  
+    </head>
+
+    <style>
+            
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
@@ -37,8 +40,8 @@ background: url(img/bg-hero.jpg);
 background-size: cover;
 background-position: right;
 position: relative;
-border-bottom-left-radius: 30% 7%;
-border-bottom-right-radius: 30% 7%;
+border-bottom-left-radius: 50% 3%;
+border-bottom-right-radius: 50% 3%;
 z-index: 100;
 }
 
@@ -100,15 +103,15 @@ z-index: 10;
 
 
 /* start ul bottom hero sec */
-.hero .content .bottom-sec{
+.bottom-sec{
 text-align: center;
 padding: 10px 20px 20px 30px;
 }
-.hero .content .bottom-sec .line{
+.bottom-sec .line{
 text-align: right;
 }
 
-.hero .content .bottom-sec .line{
+.bottom-sec .line{
 list-style: none;
 display: flex;
 align-items: center;
@@ -117,17 +120,17 @@ font-size: 17px;
 font-weight: 1000;
 }
 
-.hero .content .bottom-sec .line:last-child{
+.bottom-sec .line:last-child{
 margin-bottom: 25px;
 }
-.hero .content .bottom-sec .line span{
+.bottom-sec .line span{
 min-width: 8px;
 height: 40px;
 background-color: #e60f0f;
 margin-left: 10px;
 border-radius: 10px;
 }
-.hero .content .bottom-sec .btn{
+.btn{
 padding: 15px 70px;
 border-radius: 10px;
 color: #fff;
@@ -149,7 +152,9 @@ background: url(img/bg-red.jpg);
 background-size: cover;
 background-position: center;
 padding: 50px 20px 20px;
-z-index: 10;
+z-index: 20;
+border-bottom-left-radius: 50% 3%;
+border-bottom-right-radius: 50% 3%;
 }
 
 .two-sec .head-sec{
@@ -177,17 +182,66 @@ z-index: 10;
 }
 .two-sec .content .box .text h2{
     color: #fff;
+    margin-bottom: 15px;
 }
-.two-sec .content .box .text p{
+.two-sec .content .box .text .content{
+    display: flex;
+    flex-direction: column;
     color: #fff;
-    font-size: 15px;
-    padding-left: 20px;
+    line-height: 1.7;
+    font-weight: 600;
 }
-   </style>
-  
-    </head>
+    
 
+/* start section-3 */
+.section-3 {
+    text-align: center;
+    padding: 30px 0;
+background: url(img/bg-hero.jpg);
+background-size: cover;
+background-position: right;
+position: relative;
+border-bottom-left-radius: 50% 3%;
+border-bottom-right-radius: 50% 3%;
+z-index: 18;
+top: -70px;
+}
+.section-3 .contanier{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    position: relative;
+}
+.section-3 .contanier .div-img{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.section-3 .contanier .div-img img{
+    width: 170px;
+}
+.section-3 .contanier .bottom-sec{
+    padding: 10px 10px 20px 30px;;
+}
+.section-3 .contanier .bottom-sec .head{
+    margin-bottom: 20px;
 
+}
+.section-3 .contanier .bottom-sec .head p{
+    font-size: 22px;
+    color: #111;
+    font-weight: 700;
+}
+.section-3 .contanier .bottom-sec .head span{
+    font-size: 22px;
+    color: #DA0000;
+    font-weight: 900;
+}
+.section-3 .contanier .bottom-sec .all-line{
+    padding-right: 10px;
+    font-size: 17px;
+}
+    </style>
     
     <body>
         <div class="hero">
@@ -268,13 +322,17 @@ z-index: 10;
                 <div class="head-sec">
                     <h3>نتائج  سترايك جيل</h3>
                     <p>في اول اسـبوعين</p>
-                    <p>من الأستخدام</p>
+                    <p>مــن الأستـخــدام</p>
                 </div>
 
                 <div class="box">
                     <div class="text">
                         <h2>الاسبوع الأول</h2>
-                        <p>تــــأخيـــر القــــذف : من 15 الي  20دقيقة زيادة الطول : من  3.5سـم الي  4.5سـم زيــــادة الانتصـــــاب بنسبــــــة 40٪ الي 6</p>
+                          <div class="content">
+                        <p>تـــأخيـــر القــــذف : من 15 الي 20دقيقة</p>
+                        <p>زيــادة الطول : من 3.5 سـم الي 4.5 سـم</p>
+                        <p>زيــــادة الانتصــــاب بنسبــــــة 40٪ الي 6</p>
+                    </div>
                     </div>
 
                     <img src="img/4.png" alt="">
@@ -283,12 +341,80 @@ z-index: 10;
                 <div class="box">
                     <div class="text">
                         <h2> الاسبوع الثاني</h2>
-                        <p>تأخيــر القـــذف : من  25الي  40دقيقــة زيــادة الطـــول : مــن 5 سم الي 7 سم زيـــادة الانتصـــــاب بنسبـة 70٪ الي 1</p>
+                        <div class="content">
+                            <p>تأخيــر القــذف : من  25 الي  40 دقيقـة</p>
+                            <p>زيـــادة الطـــول : مــن 5 سم الي 7 سم </p>
+                            <p>زيـــادة الانتصـــــاب بنسبـة 70٪ الي 1</p>
+                        </div>
                     </div>
 
                     <img src="img/4.png" alt="">
                 </div>
             </div>
+        </div>
+
+        <div class="section-3">
+            <div class="contanier">
+               
+                <div class="div-text">
+                    <div class="top-sec">
+
+                    </div>
+                    <div class="bottom-sec">
+                        <div class="head">
+                            <p>ينصح الدكتورالبروفيسور</p>
+                            <span>نيكـــولاوس ميـرتزيــوتـس</span>
+                            <p>بــأستخدام سترايـك جيل</p>
+                        </div>
+
+                        <div class="all-line">
+    
+                            <div class="line">
+                                <span></span>
+                                <div class="row">
+                                   <li>لأنه يعطيـك نتيجة فورية</li>
+                                   <li>سـريعة منذ اول استخدام</li>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="line">
+                                <span></span>
+                                <div class="row">
+                                   <li>لأنه كـورس علاجي نهائي</li>
+                                   <li>ولــيـــــس حــــــل مــــؤقـت</li>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="line">
+                                <span></span>
+                                <div class="row">
+                                    <li>امــن وصحي علي مرضـــي  </li>
+                                    <li>القلــب والضغـــط والـسكـر</li>
+                                </div>
+                            </div>
+    
+                            <div class="line">
+                                <span></span>
+                                <div class="row">
+                                    <li>لأنه سـيجعلك بقوة شاب</li>
+                                    <li>فــي الـــــ20 مــن عـمــــره </li>
+                                </div>
+                                
+                            </div>
+    
+                        </div>
+    
+                        
+                    </div>
+                </div>
+                <div class="div-img">
+                    <img src="img/doctor.png" alt="">
+                </div>
+            </div>
+
+            <a href="#" class="btn"> اطلب الان</a>
         </div>
       
     </body>
